@@ -23,12 +23,6 @@ public abstract class HomePage extends Methods {
     @FindBy(xpath = "//span[@class='cross']")
     public WebElement closeThePopUp;
 
-//    @FindBy(xpath = "//*[@id='layer_cart']")
-//    public WebElement addCartPopUp;
-//
-//    @FindBy(xpath = "(//*[@id='homefeatured']//*[@class='right-block'])//*[@class='product-name']")
-//    public List<WebElement> productNamesDisplayed;
-
     @FindBy(xpath = "//*[@class='cart-info']//*[@class='product-name']//a")
     public List<WebElement> productNamesinCart;
 
@@ -46,9 +40,9 @@ public abstract class HomePage extends Methods {
     }
 
     public void addTheProductClicked(int index) {
-        String[] arr = returnTheProductName(index).getAttribute("href").split("&");
+         arrProductLink = returnTheProductName(index).getAttribute("href").split("&");
         // productsClicked.add(returnTheProductName(index).getAttribute("href"));
-        productsClicked.add(arr[0]);
+        productsClicked.add(arrProductLink[0]);
 
     }
 
@@ -56,8 +50,8 @@ public abstract class HomePage extends Methods {
         List<String> listOfProductNamesInCart = new ArrayList<>();
 
         for (WebElement each :productNamesinCart) {
-            String[] arr=each.getAttribute("href").split("&");
-            listOfProductNamesInCart.add(arr[0]);
+             arrProductInCartLink=each.getAttribute("href").split("&");
+            listOfProductNamesInCart.add(arrProductInCartLink[0]);
         }
         return listOfProductNamesInCart;
     }

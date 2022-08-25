@@ -9,13 +9,15 @@ https://www.youtube.com/watch?v=kFARYsqwlJI
 
 **Installing Selenium
 --Go to https://www.selenium.dev/downloads and download selenium for java
+-- you can follow the instructions in the following video link and install selenium into your system
+https://www.youtube.com/watch?v=PXZShFu5WLQ
 
 **Adding cucumber & Gherkin plugin to your IDE
 
 Go to your IDE settings and click on plugin section. Search for cucumber for java. Install the plugin. You will be automatically recommended downloading
-Gherkin.
+Gherkin. Download gherkin plugin. You will see a cucumber icon next to each feature file.
 
-After following the steps above, you should be able to execute the tests. There are basically two ways to run the test.
+After following the steps above, you should be able to execute the tests. There are basically two ways to run the tests.
 
 -You can run the Runner class under runners directory. This class is designed to run the feature file with the tag which is specified in the class.
 -You can run the feature file under features directory.

@@ -14,6 +14,7 @@ public class Methods {
     public static String title;
     public static Actions actions = new Actions(Driver.getDriver());
     public List<String> productsClicked = new ArrayList<>();
+    public String[] arrProductLink,arrProductInCartLink;
 
 
 
@@ -30,7 +31,7 @@ public class Methods {
         element.sendKeys(text);
     }
 
-    public void makeAssertion(String text1,String text2) {
+    public void assertion(String text1,String text2) {
         //Assert.assertTrue(text2.contains(text1));
         Assert.assertEquals(text1,text2);
     }

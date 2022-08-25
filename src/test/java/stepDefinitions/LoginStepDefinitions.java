@@ -36,7 +36,7 @@ public class LoginStepDefinitions extends LoginPage {
     @Then("login must be successful")
     public void loginMustBeSuccessful() {
         click(submitButton);
-        makeAssertion(getTitle(),ConfigReader.getProperty("Login_title"));
+        assertion(getTitle(),ConfigReader.getProperty("Login_title"));
     }
 
     @Then("navigates to homepage")

@@ -24,7 +24,7 @@ public class ProductStepDefinitions extends HomePage {
 
     @And("asserts that the product is in cart")
     public void assertsThatTheProductIsInCart() {
-        makeAssertion(productsClicked.get(0),getTheProductNamesInCart().get(0));
+        assertion(productsClicked.get(0),getTheProductNamesInCart().get(0));
     }
 
 
