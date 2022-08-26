@@ -32,8 +32,7 @@ public class Methods {
     }
 
     public void assertion(String text1,String text2) {
-        //Assert.assertTrue(text2.contains(text1));
-        Assert.assertEquals(text1,text2);
+       Assert.assertEquals(text1,text2);
     }
 
     public String getTitle() {
