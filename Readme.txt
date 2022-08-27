@@ -1,4 +1,4 @@
-This projects includes the automation test for the following scenario:
+This project includes the automation test for the following scenario:
 Access http://automationpractice.com/index.php,
 Hover over a product from the home page and add it to the basket,
 then check it out as both a registered and a guest user
