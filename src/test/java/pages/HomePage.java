@@ -41,8 +41,7 @@ public abstract class HomePage extends Methods {
 
     public void addTheProductClicked(int index) {
          arrProductLink = returnTheProductName(index).getAttribute("href").split("&");
-        // productsClicked.add(returnTheProductName(index).getAttribute("href"));
-        productsClicked.add(arrProductLink[0]);
+         productsClicked.add(arrProductLink[0]);
 
     }
 
